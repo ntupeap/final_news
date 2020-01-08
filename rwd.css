@@ -10,4 +10,100 @@
     #pg0boat{
         width: 50%;
     }
+
+    #page1 {
+        width: 100%;
+        height: 350vh;
+    }
+
+    .pg1{
+        font-size: 0.8em;
+        width: 70vw;
+    }
+
+    #page1 frame{
+        width: 70vw;
+    }
+
+    .w_hidden{
+        display: none;
+    }
+
+    #small_table{
+        display: inline;
+        width: 70vw;
+    }
+
+    .resize_title{
+        font-size: 2em;
+    }
+
+    .resize_title1{
+        font-size: 1.5em;
+    }
+
+    .pg2img{
+        max-height: 50vh;
+        max-width: 50vw;
+    }
+
+    .ocp_hidden{
+        opacity: 0;
+    }
+
+    .map_panel{
+        width: 70vw;
+        margin-top: -12vh;
+    }
+
+    .map_info{
+        font-size: 0.2em;
+    }
+
+    .map_infor{
+        font-size: 0.1em;
+    }
+
+    .pg25{
+        width: 70vw;
+    }
+
+    .pg25 p{
+        font-size: 0.8em;
+    }
+
+    #articleImg{
+        max-width: 70vw;
+        padding: 2vw 0 1vw 0;
+    }
+
+    .boat_img{
+        width: 80%;
+        height: 80%;
+        padding-top: 10vh;
+    }
+
+    #difficult{
+        width: 70vw;
+    }
+
+    .pg6{
+        width: 70vw;
+    }
+
+    .pg6 p{
+        font-size: 0.8em;
+    }
+
+    .pg7img{
+        width: 70vw;
+    }
+
+    #page7{
+        height: 140vh;
+    }
+
+    #btt i{
+        font-size: 3em;
+    }
   }

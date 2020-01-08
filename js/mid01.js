@@ -186,12 +186,12 @@ $(document).ready(function () {
 
         if (scroll_position > next_obj_position - (2 * obj_height)) {
             $('#weapon').removeClass('hidden');
-            $('#weapon_row').addClass('weapon_intro_pad');
-            $('#weapon_row').removeClass('weapon_intro');
+            // $('#weapon_row').addClass('weapon_intro_pad');
+            // $('#weapon_row').removeClass('weapon_intro');
             $('#weaponn_detail').removeClass('hidden');
         } else {
             $('#weapon').addClass('hidden');
-            $('#weapon_row').removeClass('weapon_intro_pad');
+            // $('#weapon_row').removeClass('weapon_intro_pad');
             $('#weapon_row').addClass('weapon_intro');
             $('#weaponn_detail').addClass('hidden');
         }
@@ -270,6 +270,49 @@ $(document).ready(function () {
             $('#di_3').addClass('hidden')
             $('#dt_3').removeClass('hidden')
         }
+
+        //------------------------------------
+
+        if (scroll_position > next_obj_position - (3.5 * obj_height)) {
+            $('#dif_1').addClass('w_hidden')
+            $('#dif_10').addClass('w_hidden')
+            $('#dt_1').addClass('w_hidden')
+            $('#di_1').addClass('w_hidden')
+
+            $('#dif_2').removeClass('w_hidden')
+            $('#dif_20').removeClass('w_hidden')
+            $('#dt_2').removeClass('w_hidden')
+            $('#di_2').removeClass('w_hidden')
+            
+        } else {
+            $('#dif_1').removeClass('w_hidden')
+            $('#dif_10').removeClass('w_hidden')
+            $('#dt_1').removeClass('w_hidden')
+            $('#di_1').removeClass('w_hidden')
+
+            $('#dt_2').addClass('w_hidden')
+            $('#di_2').addClass('w_hidden')
+            $('#dif_2').addClass('w_hidden')
+            $('#dif_20').addClass('w_hidden')
+        }
+
+        if (scroll_position > next_obj_position - (2.5 * obj_height)) {
+            $('#dif_2').addClass('w_hidden')
+            $('#dif_20').addClass('w_hidden')
+            $('#dt_2').addClass('w_hidden')
+            $('#di_2').addClass('w_hidden')
+
+            $('#dif_3').removeClass('w_hidden')
+            $('#dif_30').removeClass('w_hidden')
+            $('#dt_3').removeClass('w_hidden')
+            $('#di_3').removeClass('w_hidden')
+            
+        } else {
+            $('#dt_3').addClass('w_hidden')
+            $('#dif_3').addClass('w_hidden')
+        }
+
+
 
 
     });
