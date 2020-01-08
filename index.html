@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>國艦國造</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="mid01.css">
+    <link rel="stylesheet" href="rwd.css">
+    <script src="js/mid01.js">
+    </script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <div>
+        <div id="btt" href="#myPage"><i class="fa fa-4x fa-angle-up"></i></div>
+    </div>
+    <div id="page0" class="container-fluid text-center">
+        <div id="infor">
+            <h1>政策放大鏡》解密國艦國造</h1>
+            <blockquote >
+                <p>總統蔡英文執政四年大打國防牌，喊出<mark class="highlight">國艦國造</mark>、國機國造等口號，選前再次被放大檢視。</p>
+                <p>相較於馬英九政府，蔡英文政府每年的<mark class="highlight">軍事投資</mark>預算皆<mark class="highlight">逐年成長</mark>，109年軍事投資960億，也是近十年第三高。</p>
+                <p>國艦國造為什麼這麼重要？這些錢都花去哪？</p>
+            </blockquote>
+        </div>
+        <div >
+            <div style="height: 3vh;">
+                <img id="flag" src="assets/flag.png" style="padding-left: 4vh; top:10vh;z-index:1;position: relative;">
+            </div>
+
+            <div style="z-index:0;position: relative;">
+                <img id="pg0boat"src="assets/main_boat.png" >
+            </div>
+        </div>
+    </div>
+    <div id="page1" class="container-fluid text-center">
+        <div id="infor">
+            <h2>什麼是國艦國造？</h2>
+        </div>
+        <div class="fadeout" style="width: 50vw;margin:2em auto;">
+            <p>翻開近十年的《國防報告書》，可見「國防自主」一詞從個段落中的片段，變成主要章節，代表近年政府強調落實自主製造防衛性武器的國防態度。</p>
+            <p>根據國防部至立法院備詢報告，國艦國造計畫為2014年海軍司令陳永康上將任內開始規劃，而2016年司令黃曙光上將任內，則首度編列預算，並啟動原型設計、原料採購等計畫。</p>
+            <img id="articleImg" src="assets/article_1.jpg" alt="">
+            <h6>2017年，國艦國造案啟動，海軍升起三軍統帥旗迎接總統蔡英文登艦。<br>圖／Wikimedia Commons、總統府</h6>
+            <p>蔡英文說，因應國際情勢，若台灣要有效捍衛海疆，就需要透過國防產業，帶動經濟發展。2019年5月，蔡英文出席沱江艦動工典禮，喊話十年內海軍與海防要增加200艘艦艇，而這些艦艇，將全數由台灣的廠商製造。</p>
+            </div>
+        <div id="infor">
+            <h2>要造哪些艦艇？</h2>
+        </div>
+        <div class="fadeout" style="width: 50vw;margin:2em auto;">
+            <p>蔡英文所提約200艘艦艇，除了已經發包的141艘100噸至4000噸巡防艦，還有首艘自製潛艦、快速佈雷艇等71艘艦艇，供未來海防使用。</p>
+            <p>根據政府電子採購網，141艘巡防艦就花了345億，而據國防部，71艦艇包含潛艦的設計、製圖及製造，共編超過1368億元預算。</p>
+            <div class="fadeout flourish-embed" data-src="visualisation/1187524"></div>
+            <script src="https://public.flourish.studio/resources/embed.js"></script>
+            <h6>資料來源：政府電子採購網</h6>
+            <p></p>
+            <span>國艦國造案預算</span>
+            <p></p>
+            <table class="fadeout table table-black table-hover">
+
+                <thead>
+                    <tr>
+                        <th scope="col">艦艇分類</th>
+                        <th scope="col">數量(艘)</th>
+                        <th scope="col">預算</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>潛艦國造</td>
+                        <td>1</td>
+                        <td>「合約設計」預算約29.9億餘元（2016年至2020年）<br>「原型艦建造」預算共493億餘元(2019年至2025年）</td>
+                    </tr>
+                    <tr>
+                        <td>快速佈雷艇</td>
+                        <td>4</td>
+                        <td>9億1776萬元</td>
+                    </tr>
+                    <tr>
+                        <td>兩棲船塢運輸艦</td>
+                        <td>1</td>
+                        <td>73億3212萬元</td>
+                    </tr>
+                    <tr>
+                        <td>沱江艦後續艦</td>
+                        <td>3</td>
+                        <td>164億餘元</td>
+                    </tr>
+                    <tr>
+                        <td>新一代飛彈巡防艦</td>
+                        <td>1</td>
+                        <td>245億4916萬元預算（2019年到2026年）</td>
+                    </tr>
+                    <tr>
+                        <td>新型救難艦</td>
+                        <td>1</td>
+                        <td>約36億5800萬2千元（2019年至2023年執行）</td>
+                    </tr>
+                    <tr>
+                        <td>微型飛彈突擊艇</td>
+                        <td>60</td>
+                        <td>316億3844萬元（2019年至2023年執行）</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h6>資料來源：中央社、新頭殼、自由時報及自行整理</h6>
+            <p></p>
+            <p></p>
+            <p>在沱江艦動工典禮後，蔡英文在臉書上表示，沱江艦艦體小、速度快，火力也強，若能夠搭配水下潛艦，對海軍的防衛能力是一大助力。</p>
+            <p>1000 噸級巡防艦搶在2019年底開工，海巡署艦艇分署表示，新的巡防艇耐浪性更高，並更新水砲、夜間照明的配備，除了能應付不同季節的海象，也能加強取締越界作業的效率。</p>
+        </div>
+        <div id="infor fadeout">
+            <h2>為什麼現在才要造呢？</h2>
+        </div>
+        <div class="fadeout" style="width: 50vw;margin:2em auto;">
+            <p>國立海洋科技大學系統工程暨造船學系教授陳建宏說，國艦國造並非新的政策，從國民黨政府遷台，即討論自製潛艦，而後因政治環境、國際情勢變動，國艦國造始終是未定數。</p>
+            <p>陳建宏指出，艦艇分水面艦與水下艦，而水面艦技術門檻不高，台灣廠商如台灣國際造船、中信造船及龍德造船，都有辦法量產。</p>
+        </div>
+    </div>
+    <div id="page2" class="text-center">
+        <div id="page2_son" style="height:100vh;">
+            <div id="infor">
+                <h3>製船商簡介</h3>
+            </div>
+            <div id="company" class="row container-fluid" style="padding-top:10vh;">
+                <div class="col-md-6 col-sm-6">
+                    <div>
+
+
+                        <div>
+                            <!-- <i class="fa fa-circle-o pg2_circle" style="z-index:1;position: relative;"></i> -->
+                            <img src="assets/tiny_boat.png" class="pg2_circle" style="z-index: 1;position: relative; max-width: 5vw;">
+                        </div>
+                        <div style="z-index:0;position: relative;top:-15vh;">
+                            <img id="tw_1" src="assets/plain_tw_01.png" class="pg2img">
+                            <img id="tw_2" src="assets/plain_tw_02.png" class="pg2img hidden">
+                            <img id="tw_3" src="assets/plain_tw_03.png" class="pg2img hidden">
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="panel panel-default text-center" style="width:30vw;">
+                        <div id="A_company" class="panel-body">
+                            <p style="font-size: 130%; margin:0 auto; text-align: center;"><strong>台船</strong></p>
+                            <p>
+                                <br>成立初期名為「中國造船」，最初在高雄設址，現在高雄及基隆皆有大型造船廠。因應國艦國造計畫，今年也撥出其中一塊，作為「潛艦國造基地」，並且規劃紅區裝備設立專區。<br>原先台船也靠商船、國家造艦訂單，在國際市場變動下，載浮載沉，近年因為國艦國造、離岸風電幾案，訂單大增，扭轉前幾年虧損的狀況。
+
+                                <br><br>員工人數：3,017
+                                <br>實收資本額：4,729,917,000
+                                <br>成立日期：1973/11/7
+                            </p>
+                            <p style="text-align: right;"><small>資料來源：經濟部商業司、台船年報、經濟日報</small></p>
+
+                        </div>
+                        <div id="B_company" class="panel-body hidden">
+                            <p style="font-size: 130%; margin:0 auto; text-align: center;"><strong>中信造船</strong></p>
+
+                            <p><br>主要造船廠區都在高雄，設有包括中信廠、新高廠、林盛廠、新天二廠、新船廠及順榮廠等六個廠區。過去多為製造商用船，遊艇、郵輪等市場因金融風暴萎縮後，一度訂單大減，近年靠著國艦國造及離岸風電政策，再次拿到大筆訂單。
+
+                                <br><br>員工人數：約3000
+                                <br>實收資本額：492,000,000
+                                <br>成立日期：1973/12/22
+                            </p>
+                            <p style="text-align: right;"><small>資料來源：經濟部商業司、聯合報</small></p>
+
+                        </div>
+                        <div id="C_company" class="panel-body hidden">
+                            <p style="font-size: 130%; margin:0 auto; text-align: center;"><strong>龍德造船</strong></p>
+
+                            <p><br>龍德造船在台灣有5個廠區，座落宜蘭港口，辦公室則設有台北及新加玻兩址。龍德造船過去多為製造巡邏艇或渡輪，在國內，也曾參與海軍造艦計畫。陳建宏說，龍德造船過去都接國外訂單，今年也參與競標，成為國艦國造案中，重要的造船廠之一。
+
+
+                                <br><br>員工人數：340
+                                <br>實收資本額：700,000,000
+                                <br>成立日期：1976/5/6
+
+
+                                <p style="text-align: right;"><small>資料來源：經濟部商業司、104人力銀行</small></p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="page2-5" class="text-center">
+        <div style="width: 50vw; margin: 0 auto;position:relative;z-index:-1;">
+            <br><br><br>
+            <p>水下艦如潛艦，關鍵技術與武器系統不易取得，加上過去政治因素影響，才因此遲遲無法有實際成果。</p>
+            <img id="articleImg" src="assets/article_3.jpg" alt="">
+            <h6>蔡英文任內，每年穩定編列軍事投資預算，包含國艦國造案。<br>圖／Wikimedia Commons、總統府</h6>
+            <p>據內政部統計，109年蔡政府總預算2兆1022億，國防部主管預算共3580億元，其中軍事投資960億，國艦國造案佔1成5，共154億。</p>
+            <p>事實上，蔡英文上台後，國防預算連年穩定增加，在過去幾任總統期間，皆未曾出現此狀況。除了穩定增加經費，陳建宏說，目前國際情勢變動對台灣有利，受惠中美貿易戰，台灣得以取得紅區裝備，也是順利進行潛艦計劃的重要里程碑。</p>
+
+        </div>
+    </div>
+    <div id="page3" class="text-center">
+        <div id="page3_son" style="height: 100vh;">
+            <div id="infor">
+                <h3>製造潛艦需要經過哪些過程？</h3>
+            </div>
+            <div>
+                <img id="wire" class="fadeout" src="assets/wire_boat.png" style="width: 40%;height: 40%;padding-top: 10vh">
+                <img id="body" class="hidden fadeout_body_boat" src="assets/body_boat.png" style="width: 40%;height: 40%;padding-top: 10vh">
+                <img id="weapon" class="hidden" src="assets/weapon_loc.png" style="width: 40%;height: 40%;padding-top: 6vh;">
+            </div>
+            <div id="weapon_row" class="row container-fluid weapon_intro">
+
+                <div class="col-md-4 col-sm-4 ">
+                    <div class="panel panel-default text-center">
+
+                        <div id="draft" class="panel-body" style="color:initial;">
+                            <h5 class="pg3before">完成設計圖</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 ">
+                    <div class="panel panel-default text-center">
+
+                        <div id="boatt" class="panel-body">
+                            <h5 class="pg3before">船身建造</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="panel panel-default text-center">
+
+                        <div id="weaponn" class="panel-body">
+                            <h5 class="pg3before">搭載武器系統</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="page5" class="text-center" style="100vh">
+        <div id="page5_son" style="height:100vh;">
+            <div id="infor">
+                <h2>造船還有哪些難關呢？</h2>
+            </div>
+            <div id="difficult" class="fadeout" style="width: 50vw;margin:0px auto;padding-top: 10vh;">
+                <p>當經費、裝備陸續到位，陳建宏說，仍需要面對最大難題——系統整合。陳建宏解釋，過去造艦常碰到第一個問題是技術門檻高，再來是裝備取得不易，而最後如何將設備裝上艦艇，發揮功能，則是最大難關。</p>
+                <p>「就算是改動一個電鍋配置，需要重畫的圖就幾千張。」陳建宏說，在過去經手的案子裡，曾經有次希望更動電鍋的設置，然而艦艇設計繁複而精密，每個線路都彼此牽連，小改動也是大動作。</p>
+            </div>
+            <div id="difficult_row" style="padding-top: 10vh" class="hidden">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 ">
+                        <img id="dif_1" src="assets/paper.png" class="pg5img">
+                        <img id="dif_10" src="assets/broken_paper.png" class="pg5img hidden">
+                    </div>
+                    <div class="col-md-4 col-sm-4 ">
+                        <img id="dif_2" src="assets/system.png" class="pg5img">
+                        <img id="dif_20" src="assets/broken_system.png" class="pg5img hidden">
+                    </div>
+                    <div class="col-md-4 col-sm-4 ">
+                        <img id="dif_3" src="assets/boom.png" class="pg5img">
+                        <img id="dif_30" src="assets/broken_boom.png" class="pg5img hidden">
+                    </div>
+                </div>
+                <div class="row" class="container-fluid" style="padding-top: 5vh;">
+                    <div class="col-lg-12"> </div>
+                    <div class="col-md-4 col-sm-4 slideanimR">
+                        <div class="panel panel-default text-center">
+
+
+                            <div id="dt_1" class="panel-body dtitle">
+                                <h4>難關一</h4>
+                            </div>
+                            <div id="di_1" class="panel-body dinfo hidden">
+                                <h4>難關一：設計</h4>
+                                <p>過去造艦多依靠國外設計圖，而在國艦國造計畫中，則有許多造艦案，設計發包給國內船廠，如台船、船舶中心等廠商。</p>
+                                <p>這樣的趨勢也表示，台灣在造艦方面，逐步落實及解決設計問題。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 slideanim">
+                        <div class="panel panel-default text-center">
+
+                            <div id="dt_2" class="panel-body dtitle">
+                                <h4>難關二</h4>
+                            </div>
+                            <div id="di_2" class="panel-body dinfo hidden">
+                                <h4>難關二：系統</h4>
+                                <p>中山科學研究院副院長杲中興曾說過，系統整合是潛艦國造最核心的技術。諸如電腦設定、飛控等，需要確認是否符合規格且可靠。</p>
+                                <p>陳建宏則說，即使台灣擁有豐富造船經驗，船廠也並非沒有造過軍艦，在系統整合上，仍吃足苦頭。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 slideanim">
+                        <div class="panel panel-default text-center">
+
+                            <div id="dt_3" class="panel-body dtitle">
+                                <h4>難關三</h4>
+                            </div>
+                            <div id="di_3" class="panel-body dinfo hidden">
+                                <h4>難關三：紅區／黃區裝備</h4>
+                                <p>陳建宏說，紅區及黃區裝備意思為，受管制出口之設備，其中以紅區裝備最難取得。</p>
+                                <p>而今年因為中美貿易戰，川普對台灣態度轉變，也因此能拿到許多重要裝備。但整體而言，要完成潛艦，紅區裝備是一項重要關卡。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="page6" class="container-fluid item text-center">
+        <div id="infor">
+            <h2>要做這麼多，人才哪裡來？</h2>
+        </div>
+        <div class="fadeout" style="width: 50vw;margin:2em auto;">
+            <p>陳建宏分析，過去因為造船業景氣穩不穩，許多學生在造船相關科系畢業後，往往向其他更有前景的行業靠攏。他不諱言，在此趨勢中，國艦國造案在人才端的確可能出現缺口。
+                <br>
+                但陳建宏態度樂觀，他認為，若國艦國造案能維持穩定的造艦計畫，加上離岸風電需要的功能船，有助於國內相關產業的發展，國艦國造所需人才，不久後將逐一到位。</p>
+            <img id="articleImg" src="assets/article_4.jpg" alt="">
+            <h6>陳建宏不諱言目前人才是問題，但他也說，只要計畫穩定，人才幾年內可以補足。<br>圖／Wikimedia Commons、總統府</h6>
+            <p>國艦國造案在2020年仍有百億預算等著執行，而這些一步一步擘劃的設計藍圖，是否能夠如期落實，化成艦艇躍上海面，不僅是台灣船業關注的焦點，也無疑是下一任政府無法逃避的考驗。</p>
+            
+        </div>
+
+    </div>
+
+
+    <div id="page7" class="container-fluid item text-center">
+        <div id="infor">
+            <h2>相關新聞</h2>
+        </div>
+        <div>
+            <div class="row" style="padding-top: 10vh;">
+                <div class="col-md-4 col-sm-4" onclick="window.open('https://www.storm.mg/article/2120416', '_blank')">
+                    <img src="assets/03.JPG" style="width: 24vw;">
+                    <p style="font-size: 90%;">總統辯論會》「我是最重視國防的總統」　蔡英文：國艦國造是現在進行式</p>
+                </div>
+                <div class="col-md-4 col-sm-4" onclick="window.open('https://www.cw.com.tw/article/article.action?id=5098144', '_blank')">
+                    <img src="assets/02.jpg" style="width: 24vw;">
+                    <p style="font-size: 90%;">MIT海巡艦來了！自己的國家自己顧，台灣造船業如何重返榮耀？</p>
+                </div>
+                <div class="col-md-4 col-sm-4" onclick="window.open('https://www.chinatimes.com/realtimenews/20191221002264-260407?chdtv', '_blank')">
+                    <img src="assets/01.jpg" style="width: 24vw;">
+                    <p style="font-size: 90%;">陳其邁：台船國艦國造 未來20年投入5,000億</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!--    back to top-->
+    <!-- <div id="footer">
+    <footer class="container-fluid text-center">
+        <a href="#myPage" title="To Top"> <span class="glyphicon glyphicon-chevron-up"></span> </a>
+        <p>Made By<br>Ann,Tiffany,Show</p>
+    </footer>
+        </div> -->
+    <div id="footer">
+        <footer class="text-center">
+            <a href="#myPage" title="To Top"> <span class="glyphicon glyphicon-chevron-up"></span> </a>
+
+        </footer>
+
+        <div class="text-center">
+
+            <small>Made By Ann,Tiffany,Show</small><br><br><small>Copyright &copy; </small>
+
+            <a href="https://ntupeap.github.io/ntupeap.github.io/"><img src="assets/github.svg"></a>
+        </div>
+    </div>
+</body>
+
+</html>

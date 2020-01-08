@@ -1,0 +1,13 @@
+@media screen and (max-width: 768px) {
+    #page0 h1{
+        font-size: 1.8em;
+    }
+    #page0 blockquote{
+        width: 80vw;
+        margin: 0 auto;
+    }
+
+    #pg0boat{
+        width: 50%;
+    }
+  }
