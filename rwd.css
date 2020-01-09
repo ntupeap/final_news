@@ -13,7 +13,7 @@
 
     #page1 {
         width: 100%;
-        height: 350vh;
+        height: 330vh;
     }
 
     .pg1{
@@ -57,11 +57,11 @@
     }
 
     .map_info{
-        font-size: 0.2em;
+        font-size: 0.8em;
     }
 
     .map_infor{
-        font-size: 0.1em;
+        font-size: 0.8em;
     }
 
     .pg25{
@@ -106,4 +106,9 @@
     #btt i{
         font-size: 3em;
     }
+
+    .pg3after h5{
+        color: brown;
+        font-weight:bold;
+    } 
   }
