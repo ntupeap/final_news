@@ -7,13 +7,21 @@
         margin: 0 auto;
     }
 
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
     #pg0boat{
         width: 50%;
     }
 
     #page1 {
         width: 100%;
-        height: 430vh;
+        height: 400vh;
     }
 
     .pg1{
@@ -35,7 +43,7 @@
     }
 
     .resize_title{
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     .resize_title1{
@@ -43,17 +51,21 @@
     }
 
     .pg2img{
-        max-height: 50vh;
-        max-width: 50vw;
+        max-height: 30vh;
+        max-width: 30vw;
     }
 
     .ocp_hidden{
         opacity: 0;
     }
 
+    .panel-body p{
+        font-size: 0.8em;
+    }
+
     .map_panel{
         width: 70vw;
-        margin-top: -12vh;
+        margin-top: -15vh;
     }
 
     .map_info{
@@ -111,4 +123,7 @@
         color: brown;
         font-weight:bold;
     } 
+    h6{
+        font-size: 0.6em;
+    }
   }
